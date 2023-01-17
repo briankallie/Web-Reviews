@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119226682334" remote="132510096000000000" Dst="2" />
+<file name="AttributeNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119228270752" remote="132510096000000000" Dst="2" />
+<file name="ClassNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119230310376" remote="132510096000000000" Dst="2" />
+<file name="CombinedSelectorNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119233528565" remote="132510096000000000" Dst="2" />
+<file name="ElementNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119234028666" remote="132510096000000000" Dst="2" />
+<file name="FunctionNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119236066189" remote="132510096000000000" Dst="2" />
+<file name="HashNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119239203577" remote="132510096000000000" Dst="2" />
+<file name="NegationNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119239690371" remote="132510096000000000" Dst="2" />
+<file name="NodeInterface.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119241714219" remote="132510096000000000" Dst="2" />
+<file name="PseudoNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119245023659" remote="132510096000000000" Dst="2" />
+<file name="SelectorNode.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119245523480" remote="132510096000000000" Dst="2" />
+<file name="Specificity.php" server="bkallie.bitweb1.nwtc.edu//" local="132723119248788094" remote="132510096000000000" Dst="2" />
+</dwsync>

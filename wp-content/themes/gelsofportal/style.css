@@ -1,0 +1,792 @@
+/*
+Theme Name: Gels of Portal
+Theme URI: http://bkallie.bitweb1.nwtc.edu/
+Description: A theme that tries to capture the colors and feel of the gels from the game Portal
+Author: Brian Kallie
+Author URI: http://bkallie.bitweb1.nwtc.edu/
+Version: 1.0
+
+Tags:
+
+License: 
+License URI:
+
+General comments (optional).
+*/
+
+/* ==================== START WordPress Core (Required) ==================== */
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+/* ==================== END WordPress Core (Required) ==================== */
+
+
+/* ========== Reset ========== */
+* {
+	border: none;
+	outline: none;
+}
+
+ul,
+ol {
+	list-style: none;
+    padding-left: 0;
+}
+
+/* ========== Clearfix ========== */
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ========== Root and Body ========== */
+html {
+	font-size: 62.5%;
+	line-height: 1.6;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+	font-size: 1.6em;
+    margin: 0;
+	background-color: #ffe7d2;
+	color: #000000;
+}
+
+/* ========== Media - All ========== */
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+.column { 
+	margin-bottom: 1rem;
+    padding: 0 0.5em;
+    width: 100%;
+}
+
+header {
+    background-color: #ff9940;
+    border: 1px solid #ff7700;
+}
+
+header h1 {
+    display: none;
+}
+
+header p {
+    margin: 0 0px 10px 15px;
+}
+
+header.column {
+    padding: 0;
+}
+
+h2, h3 {
+    color: #022ba0;
+}
+
+article hr {
+    background-color: #022ba0;
+    height: .1em;
+}
+
+hr {
+    background-color: #022ba0;
+    height: .1em;
+}
+
+hr.wp-block-separator.hr {
+    height: .1em;
+}
+
+body.author {
+    background-color: #ffe7d2;
+    border: none;
+    padding: 0;
+}
+
+body.page-template-page_full-size section#content {
+    background-color: #ffffff;
+}
+
+/* ========== Main Link States ========== */
+a:link, a:visited {
+    color: #012ba0;
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color: #002d01;
+}
+
+a:active {
+    color: #ff7700;
+}
+
+/* ========== Navigation (Slicknav) ========== */
+nav {
+    display: none;
+}
+
+nav#pagination {
+    display: block;
+}
+
+div.slicknav_menu {
+    display: block;
+    background-color: #ff9940;
+}
+
+div.slicknav_menu .slicknav_menutxt {
+    color: #000000;
+}
+
+div.slicknav_menu a.slicknav_btn {
+    background-color: #ff9940;
+}
+
+div.slicknav_menu a:hover {
+    background: #ff7c09;
+    color: #000000;
+}
+
+div.slicknav_menu .slicknav_brand {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.35em;
+    text-transform: uppercase;
+}
+
+div.slicknav_menu .slicknav_icon-bar {
+    background-color: #000000;
+}
+
+div.slicknav_menu .slicknav_nav a {
+    color: #ffffff;
+    height: 50px;
+    line-height: 35px;
+    background-color: #012ba0;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    border: 1px solid #638bff;
+    margin: 0;
+}
+
+div.slicknav_menu .slicknav_nav a:hover {
+    border-radius: unset;
+}
+
+/* ========== Mobile view image size fix ========== */
+body.search section#content div img, body.archive section#content div img {
+    margin-top: 2em;
+    width: auto;
+}
+
+/* ========== Form controls ========== */
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    text-align: left;
+}
+
+form fieldset {
+    border: 1px solid #022ba0;
+    margin-bottom: 1em;
+}
+
+form legend {
+    padding: 0.35em;
+    background-color: #022ba0;
+    color: #ffffff;
+}
+
+form input[type="text"], input[type="email"], input[type="url"], select, textarea {
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0.35em;
+    display: block;
+}
+
+textarea {
+    margin: 0 auto;
+    width: 100%;
+}
+
+form input#search-header {
+    display: inline-block;
+    width: 70%;
+}
+
+form input#wp-comment-cookies-consent {
+    display: block;
+}
+
+form input[type="submit"], button.wpforms-submit {
+    padding: 0.35em 0.5em;;
+    background-color: #022ba0;
+    color: #ffffff;
+    float: right;
+}
+    
+form input[type="submit"], button.wpforms-submit {
+    float: none;
+    margin-bottom: 1em;
+}
+
+input.search-field {
+    margin-top: 1.5em;
+    width: 100%;
+    height: 2em;
+    margin: 1em auto;
+    display: block;
+}
+
+div.wpforms-container input.wpforms-field-medium {
+    max-width: none;
+}
+
+div .wpforms-container .wpforms-field-label {
+    color: #022ba0;
+}
+
+/* ========== Upper Footer (#upper-footer) ========== */
+#upper-footer {
+    background-color:#638bff;
+    color: #ffffff;
+}
+
+#upper-footer h2,h3 {
+    color:#022ba0;
+}
+
+/* ========== Bottom Footer ========== */
+#bottom-footer-main {
+    text-align: center;
+}
+
+#bottom-footer-main ul li {
+    display: inline;
+}
+
+#bottom-footer-main ul li a[href^=http] {
+    margin-left: 2em;
+}
+
+/* ========== Author card ========== */
+.author {
+    background: #ff9940;
+    border: 1px solid #ff7700;
+    padding: 1em;
+}
+
+.author h2 {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.author h2 a {
+    text-transform: capitalize;
+}
+
+section#content div.author img {
+    float: right;
+    width: auto;
+}
+
+section#content div footer img {
+    width: auto;
+}
+
+/* ========== Pagination ========== */
+#pagination {
+    display: block;
+    padding: 12px 0;
+    margin: 0 0 5em 0;
+    text-align: center;
+}
+
+#pagination ul {
+    display: inline-block;
+}
+
+#pagination li {
+    float: left;
+    width: 50px;
+    line-height: normal;
+    margin: 0 .75em 0 0;
+    font-size: 1.35em;
+    text-align: center;
+    list-style-type: none;
+    background-color: #022ba0;
+    border: 1px solid #638bff;
+    color: #ffffff;
+}
+
+#pagination ul li a {
+    color: #ffffff;
+    padding-top: 0;
+    border: none;
+    line-height: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#pagination li span.page-numbers.current {
+    background-color: #638bff;
+    padding: 0 18px 0 19px;
+}
+
+#pagi {
+    display: block;
+}
+
+#pagi ul {
+    background-color: #022ba0;
+    margin-bottom: 0;
+    display: flex;
+}
+
+#pagi li:last-child {
+    float: right;
+    border-right: 1px solid #638bff;
+    flex: 1;
+}
+
+#pagi li {
+    display: inline-block;
+    width: 50%;
+}
+
+#pagi a:link, #pagi a:visited {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: #022ba0;
+    border: 1px solid #638bff;
+    border-right: none;
+}
+
+#pagi a:hover, #pagi a:focus {
+    background-color: #638bff;
+}
+
+#pagi a:active {
+    background-color: #022ba0;
+}
+
+/* ========== Reply/Comments ========== */
+div#respond {
+    margin-top: 5em;
+}
+
+h2.comments-title {
+    margin-top: 2.5em;
+}
+
+footer.comment-meta {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: .7em;
+}
+
+.comment-author.vcard {
+    height: 1.5em;
+}
+
+.comment-author.vcard img {
+    float: right;
+    margin: 0.3em 0 0 0.5em;
+}
+
+li.comment {
+    margin-top: .5em;
+    padding: .5em;
+}
+
+.bypostauthor {
+    background-color: #ff9940;
+    border: 1px solid #ff7700;
+}
+
+span.says {
+    display: none;
+}
+
+a.comment-edit-link {
+    margin: 0 0 0 2em;
+}
+
+p.logged-in-as a {
+    margin-left: 3em;
+}
+
+.depth-2 {
+    margin-left: 2em;
+}
+
+/* ========== Post Featured Image ========== */
+section#content div img {
+    width: 100%;
+}
+
+/* ========== Widgets ========== */
+table#wp-calendar {
+    width: 100%;
+}
+
+table#wp-calendar tr td {
+    text-align: center;
+    height: 3em;
+}
+
+table#wp-calendar caption {
+    height: 2em;
+}
+
+nav.wp-calendar-nav {
+    display: block;
+}
+
+div.widget ul li a {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+main div.widget ul li a {
+    color: #012ba0;
+}
+
+div#calendar_wrap {
+    margin-bottom: 1em;
+}
+
+/* ========== Plugins ========== */
+div.wpforms-confirmation-container p {
+    padding: 1em;
+    background-color: #ddffdd;
+    border: 1px solid #4CAF50;
+}
+
+/* ========== Footer ========== */
+footer {
+    margin: 0;
+    clear: both;
+    line-height: normal;
+    background-color: #ff9940;
+    color: #000000;
+    border: 1px solid #ff7700;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a:link, footer a:visited {
+    text-decoration: none;
+    color: #012ba0;
+    font-weight: bold;
+}
+
+footer a:hover, footer a:focus {
+    color: #000000;
+}
+
+footer a:active {
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   Media: Tablet and Desktop
+   ========================================================================== */
+
+@media (min-width: 768px) {
+
+/* ========== Grid: Columns ========== */
+    .column {
+        float: left;
+        margin: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .column.full { width: 100%; }
+    .column.three-fourths {width: 75%; }
+    .column.two-thirds { width: 66.66%; }
+    .column.half { width: 50%; }
+    .column.third { width: 33.33%; }
+    .column.fourth { width: 25%; }
+    .column.flow-opposite { float: right; }
+	
+/* ========== Grid: Nested Columns ========== */
+	.column .column.half:first-child {
+		padding-left: 0;
+	}
+	
+	.column .column.half:last-child {
+		padding-right: 0;
+	}
+    
+/* ========== Navigation ========== */
+	nav {
+        display: block;
+    }
+    
+    nav.column {
+        padding: 0;
+    }
+
+    div.slicknav_menu {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+    
+	nav li {
+		flex: 1;
+		margin: 0;
+	}
+	
+	nav li a:link, nav li a:visited {
+		display: block;	
+		text-align: center;
+		line-height: 50px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #ffffff;
+        background-color: #022ba0;
+        border: 1px solid #638bff;
+        border-right: none;
+        text-transform: uppercase;
+	}
+    
+    nav li a:hover, nav li a:focus {
+        background-color: #638bff;
+    }
+    
+    nav li a:active {
+        background-color: #022ba0;
+    }
+
+    nav ul li:last-of-type {
+        border-right: 1px solid #638bff;
+    }
+
+    .navbar {
+        background-color: #022ba0;
+    }
+
+    #pagi ul {
+        padding: unset;
+    }
+	
+/* ========== Form controls ========== */
+    form input[type=text], input[type="email"], input[type="url"], textarea, select {
+        width: 100%;
+        display: block;
+    }
+
+    textarea {
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+    
+    form label {
+        display: block;
+        text-align: left;
+    }
+    
+    form input[type="submit"], button.wpforms-submit {
+        float: none;
+    }
+
+    form input#search-header {
+        width: 20em;
+    }
+    
+/* ========== Alignment Text and Images ========== */
+	
+	.center {
+		text-align: center;
+	}
+
+    .right {
+        text-align: right;
+    }
+
+    .left {
+        text-align: left;
+    }
+    
+    img {
+        width: auto;
+    }
+	
+	.img-left {
+		float: left;
+		width: 200px;
+		margin: 0 1em 0 0;
+	}
+	
+	.img-right {
+		float: right;
+		width: 200px;
+		margin: 0 0 0 1em;
+	}
+    
+    .img-center {
+		display: block;
+        text-align: center;
+        margin: 0 auto;
+		width: 200px;
+	}
+
+    img.attachment-fullwidth-featured-image.size-fullwidth-featured-image.wp-post-image {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    header h1 {
+        display: block;
+        text-align: center;
+        margin-bottom:0;
+        text-transform: uppercase;
+    }
+
+    section#content div img {
+        width: auto;
+    }
+	
+} /* /@media 768px */
